@@ -168,7 +168,9 @@ int main()
     Null pointer has its own uses, for example there is a
     data structure by the name of LinkedList and the during
     its traversal we determine the end of LinkedList when
-    we encounter a Null pointer.
+    we encounter a Null pointer. Also important to note is that
+    we cannot dereference a null pointer because it doesn't
+    point to a valid memory location.
 
     Following is a little piece of code to verify:
     */
