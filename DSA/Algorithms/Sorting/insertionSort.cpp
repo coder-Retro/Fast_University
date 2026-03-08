@@ -6,7 +6,17 @@ class Solution
 public:
     void insertionSort(vector<int>& nums)
     {
-
+        for(int i=1,target,insertPoint;i<nums.size();i++)
+        {
+            target=nums[i];
+            insertPoint=i-1;
+            while(insertPoint>=0 && nums[insertPoint]>target)
+            {
+                nums[insertPoint+1]=nums[insertPoint];
+                insertPoint--;
+            }
+            nums[insertPoint+1]=target;
+        }
     }
 };
 int main()
