@@ -7,7 +7,6 @@ public:
     int binarySearch(vector<int>& nums,int target)
     {
         if(nums.size()==0) return -1;
-        // Binary Search Algorithm
         int i=0;
         int j=nums.size()-1;
         int mid;
