@@ -4,7 +4,7 @@ using namespace std;
 class Solution
 {
 public:
-    int targetIndex(vector<int>& nums,int target)
+    int binarySearch(vector<int>& nums,int target)
     {
         if(nums.size()==0) return -1;
         // Binary Search Algorithm
@@ -26,6 +26,6 @@ int main()
     Solution s;
     vector<int> nums;
     for(int i=0;i<100;i++) nums.push_back(i+1);
-    cout<<s.targetIndex(nums,50);
+    cout<<s.binarySearch(nums,50);
     return 0;
 }
