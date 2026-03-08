@@ -28,6 +28,33 @@ int main()
     cout<<"&a   = "<<&a<<'\n';
     cout<<"ptr  = "<<ptr<<'\n';
     cout<<"*ptr = "<<*ptr<<'\n';
+
+    /*
+    Double or Tripple Pointer:
+    A pointer that can hold the address of a single*
+    pointer is called a double pointer and is denoted
+    by two * in declaration:
+    int *p;
+    int **p1=&p;
+    Similarly a tripple pointer with three * can hold
+    the address of a double pointer:
+    int ***r=&q;
+    In short, a pointer with N *s can hold the address
+    of a pointer with N-1 *s.
+
+    Following is a little piece of code to verify:
+    */
+
+    // double and tripple pointer:
+    cout<<"\nDouble And Tripple Pointer :\n";
+    int *p;
+    int **q=&p;
+    int ***r=&q;
+    cout<<"&p (single Pointer) = "<<&p<<'\n';
+    cout<<"q  (double Pointer) = "<<q<<'\n';
+    cout<<"&q (double Pointer) = "<<&q<<'\n';
+    cout<<"r  (Triple Pointer) = "<<r<<'\n';
+
     /*
     Types Of Pointer (4):
 
