@@ -16,38 +16,27 @@ Vector functions :
 */
 int main()
 {
-    // Declaring Empty Vector
-    vector<int> vec1;
-    // .size(); Function :
-    cout<<"Vec1 size Empty : "<<vec1.size()<<'\n';
-    // .push_back(value) Function :
-    for(int i=1;i<=5;i++)
-        vec1.push_back(i);
-    cout<<"Vec1 size PushBack : "<<vec1.size()<<'\n';
+    // Declaration:
+    vector<int> v;
+    // Size Function :
+    cout<<v.size()<<'\n';
+    // Push Back Function :
+    v.push_back(1); // adds element to the back of vector
+    v.push_back(2);
+    v.push_back(3);
+    // Size Function:
+    cout<<v.size()<<'\n'; // gives the size of vector
     // For Each Loop :
-    cout<<"Vec1 Elements : ";
-    for(int value:vec1)
-    {
-        cout<<value<<" ";
-    }
+    for(int value:v) cout<<value<<" ";
     cout<<'\n';
-    // .pop_back(); Function :
-    vec1.pop_back();
-    cout<<"Vec1 size PopBack : "<<vec1.size()<<'\n';
-    // For Each Loop :
-    cout<<"Vec1 Elements : ";
-    for(int value:vec1)
-    {
-        cout<<value<<" ";
-    }
-    cout<<'\n';
-    // .back() Function :
-    cout<<"Vec1.back() : "<<vec1.back()<<'\n';
-    // .front() Function :
-    cout<<"Vec1.front() : "<<vec1.front()<<'\n';
-    // .at(index) Function :
-    cout<<"Vec1 Elements using .at(index) : ";
-    for(int i=0;i<vec1.size();i++)
-        cout<<vec1.at(i)<<" ";
+    // Pop Back Function :
+    v.pop_back(); // removes element from back of vector
+    // Back Function :
+    cout<<v.back()<<'\n'; // gives back element of vector
+    // Front Function :
+    cout<<v.front()<<'\n'; // gives front element of vector
+    // at Function :
+    for(int i=0;i<v.size();i++)
+        cout<<v.at(i)<<" "; // same as v[i];
     return 0;
 }
