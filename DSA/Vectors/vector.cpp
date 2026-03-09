@@ -8,8 +8,8 @@ Majority of Leetcode problems require use of vectors rather than
 arrays which have a fixed size and cant be changed on runtime.
 Vector functions :
 .size();             gives size of vector
-.push_back(value);   adds a value to end of vector
-.pop_back();         removes a value from end of vector
+.push_back(value);   adds a value to back of vector
+.pop_back();         removes a value from back of vector
 .front();            gives the value at front of vector
 .back();             gives the value at back of vector
 .at(index);          gives the value at index i, same as vec[i]
