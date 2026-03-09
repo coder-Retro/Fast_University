@@ -11,14 +11,17 @@ int main()
 {
     // Declaration:
     deque<int> dq;
-    // Major Functions:
+    // Push Back Function:
     dq.push_back(2); // add element to the end of deque
     dq.push_back(3);
+    // Push Front Function:
     dq.push_front(1); // add element to the start of deque
     dq.push_front(0);
     for(int i:dq) cout<<i<<" ";
     cout<<'\n';
+    // Pop Back Function:
     dq.pop_back(); // remove element from the end of deque
+    // Pop Front Function:
     dq.pop_front(); // remove element fromt the start of deque
     for(int i:dq) cout<<i<<" ";
     cout<<'\n';
