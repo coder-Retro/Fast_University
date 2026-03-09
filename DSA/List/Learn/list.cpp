@@ -1,6 +1,12 @@
 #include<iostream>
 #include<list>
 using namespace std;
+/*
+List are DLL or doubly linked lists and hence random access isn't
+possible in them, like:
+list<int> lis={1,2,3,4,5};
+cout<<lis[2]; // invalid
+*/
 int main()
 {
     // Declaration:
