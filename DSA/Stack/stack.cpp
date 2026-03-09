@@ -12,16 +12,20 @@ int main()
 {
     // Declaration:
     stack<int> s;
-    // Major Functions:
-    s.push(1); // puts element into stack
+    // Push Function:
+    s.push(1);
     s.push(2);
     s.push(3);
     s.push(4);
     s.push(5);
+    // Top Function:
     cout<<s.top()<<'\n'; // gives top element of stack
+    // Pop Function:
     s.pop(); // removes top element of stack
     cout<<s.top()<<'\n'; 
+    // Size Function:
     cout<<s.size()<<'\n'; // gives size of stack
+    // Empty Function:
     cout<<s.empty()<<'\n'; // checks is stack is empty
     // stack print loop:
     while(!s.empty())
@@ -30,7 +34,7 @@ int main()
         s.pop();
     }
     cout<<'\n';
-    // s.swap(s2) Function:
+    // Swap Function:
     s.push(1);
     s.push(2);
     s.push(3);

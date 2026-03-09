@@ -2,6 +2,10 @@
 #include<vector>
 using namespace std;
 /*
+Vectors are basically re-sizable dynamic arrays that can increase
+their size on runtime whenever a new element is pushed into them.
+Majority of Leetcode problems require use of vectors rather than
+arrays which have a fixed size and cant be changed on runtime.
 Vector functions :
 .size();             gives size of vector
 .push_back(value);   adds a value to end of vector
