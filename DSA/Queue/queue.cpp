@@ -13,17 +13,17 @@ int main()
     // Declaration:
     queue<int> q;
     // Push Function:
-    q.push(1);
+    q.push(1); // adds element into queue
     q.push(2);
     q.push(3);
     // Size Function:
-    cout<<q.size()<<'\n';
+    cout<<q.size()<<'\n'; // gives size of queue
     // Empty Function:
-    while(!q.empty())
+    while(!q.empty()) // checks if queue is empty
     {
-        cout<<q.front()<<" ";
+        cout<<q.front()<<" "; // gives front element of queue
         // Pop Function:
-        q.pop();
+        q.pop(); // removes front element of queue
     }
     cout<<'\n';
     // Swap Function:
@@ -31,7 +31,7 @@ int main()
     q.push(2);
     q.push(3);
     queue<int> q2;
-    q.swap(q2);
+    q.swap(q2); // swaps element of both queues
     cout<<q.size()<<'\n';
     cout<<q2.size()<<'\n';
     return 0;
