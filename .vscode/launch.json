@@ -7,9 +7,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "d:/Personal/Development/Codes/C/Coders/Fast Uni",
-      "program": "d:/Personal/Development/Codes/C/Coders/Fast Uni/build/Debug/outDebug",
+      "externalConsole": false,
+      "cwd": "/home/hasna1n/Drive/Personal/Development/Codes/Repositories/Fast_University/DSA/Algorithms/Search",
+      "program": "/home/hasna1n/Drive/Personal/Development/Codes/Repositories/Fast_University/DSA/Algorithms/Search/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
