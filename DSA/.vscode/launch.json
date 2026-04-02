@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/hasna1n/Drive/Personal/Development/Codes/Repositories/Fast_University/DSA/PriorityQueue",
-      "program": "/home/hasna1n/Drive/Personal/Development/Codes/Repositories/Fast_University/DSA/PriorityQueue/build/Debug/outDebug",
+      "cwd": "/home/hasna1n/Drive/Personal/Development/Codes/Repositories/Fast_University/DSA/Linked List",
+      "program": "/home/hasna1n/Drive/Personal/Development/Codes/Repositories/Fast_University/DSA/Linked List/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
