@@ -2,7 +2,7 @@
 void main()
 {
     int matrix[3][3]; //  declaring 3x3 2D array
-    int sum=0; // declaring largest variable
+    int sum=0; // declaring sum variable
     printf("Enter elements of 3x3 matrix :\n");
     for(int i=0;i<3;i++)
     {
