@@ -1,8 +1,10 @@
-#include"list.h"
+#include<iostream>
+#include"list"
+using namespace std;
 // Main Function
 int main()
 {
-    List ll;
+    list<int> ll;
     ll.putFront(3);
     ll.putFront(2);
     ll.putFront(1);
@@ -11,7 +13,6 @@ int main()
     ll.putBack(6);
     ll.insertNode(7,3);
     ll.deleteNode(5);
-    ll.printList();
-    cout<<ll.searchNode(4);
+    cout<<ll.searchNode(7);
     return 0;
-} 
+}
