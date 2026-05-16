@@ -20,6 +20,6 @@ int main()
     Recursion r;
     vector<int> vec={1,2,3,4,5,6,7,8,9,10};
     int target=5;
-    cout<<target<<" found at index : "<<r.BinarySearch(vec,0,vec.size(),target);
+    cout<<target<<" found at index : "<<r.BinarySearch(vec,0,vec.size()-1,target);
     return 0;
 }
