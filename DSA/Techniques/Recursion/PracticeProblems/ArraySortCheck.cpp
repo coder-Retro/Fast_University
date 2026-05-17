@@ -4,12 +4,10 @@ using namespace std;
 class Recursion
 {
 public:
-    bool isSorted(const vector<int>& num,int size)
+    bool isSorted(const vector<int>& num,int n)
     {
-        if(size==1) return true;
-        if(num[size-1]<num[size-2])
-            return false;
-        return isSorted(num,size-1);
+        if(n==1) return true;
+        return num[n-1]>=num[n-2] && isSorted(num,n-1);
     }
 };
 int main()
