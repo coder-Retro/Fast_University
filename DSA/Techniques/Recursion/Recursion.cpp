@@ -26,15 +26,14 @@ methods in Binary Trees, these are:
 */
 
 // Recursive Function
-void reverseTable(int num,int mul)
+int nFactorial(int n)
 {
-    cout<<num<<" x "<<mul<<" = "<<num*mul<<'\n';
-    if(mul==1) return;
-    reverseTable(num,mul-1);
+    if(n==1) return n;
+    return n*nFactorial(n-1);
 }
 // Main Function
 int main()
 {
-    reverseTable(5,10);
+    cout<<nFactorial(4);
     return 0;
 }
