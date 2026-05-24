@@ -105,34 +105,33 @@ public:
         newNode->next=temp->next; // Setting  newNode's next to current Node at pos
         temp->next=newNode; // Setting next of Node at pos-1 to newNode to settle newNode at pos
     }
-    void deleteNode(int pos) // Delete Node at pos
+    void deleteNode(int pos)
     {
-        if(pos<0) // If Position is Invalid
-            return; // Returning to call
-        if(!head) // If list is Empty
-            return; // Returning to call
-        if(!pos&&head) // If Target Position is head
+        if(pos<1) return; // If Position is Invalid
+        if(pos==1||!head) // If Target Position is head
         {
             remFront(); // Calling remFront();
             return; // Returning to call
         }
-        Node<T>* temp=head; // Creating temp Node<T>* to head
-        for(int i=0;i<pos-1;i++) // Finding Previous Node of Target
+        int size=0; // List size variable (number of Nodes)
+        Node<T>* temp=head; // List Traversal pointer
+        while(temp) // While temp is not NULL
         {
-            if(!temp->next) // If Position was not found in the list
-                return; // Returning to call
-            temp=temp->next; // Updating temp to next Node
+            size++; // Counting size
+            temp=temp->next; // Traversing list
         }
-        Node<T>* target=temp->next; // Creating target Node<T>* to pos Node
-        if(!target) // If Position was not found in the list
-            return; // Returning to call
-        if(!target->next) // Target Node is Back Node
+        if(pos>size) return; // If Position is out of bounds
+        if(pos==size) // If Target position is tail
         {
             remBack(); // Calling remBack();
             return; // Returning to call
         }
-        temp->next=target->next; // Updating temp's next to Target's next
-        delete target; // Removing Target Node
+        temp=head; // Resetting temp to head
+        for(int i=1;i<pos-1;i++) // Traversing to pos-1 Node
+            temp=temp->next; // Traversing list
+        Node<T>* target=temp->next; // Setting a target pointer on target Node
+        temp->next=target->next; // Skipping target in list (Removing target)
+        delete target; // Deleting target
     }
     int searchNode(T data) // Searching data in list
     {
