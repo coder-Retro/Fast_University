@@ -23,7 +23,7 @@ public:
     {
         while(head)
             remFront();
-    }
+    } 
     void putFront(T data) // Putting Node at list Front
     {
         Node<T>* newNode=new Node(data); // Creating newNode with data
@@ -58,7 +58,6 @@ public:
             return; // Returning to call
         Node<T>* temp=head; // Creating temp Node<T>* to Front Node
         head=head->next; // Updating head to 2nd Front Node
-        temp->next=nullptr; // Setting temp's next to nullptr
         delete temp; // Deleting Front Node
     }
     void remBack() // Removing Back Node From list
