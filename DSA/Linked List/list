@@ -136,14 +136,14 @@ public:
     int searchNode(T data) // Searching data in list
     {
         Node<T>* temp=head; // Creating temp Node<T>* to Front Node
-        int pos=0; // Creating Position to Node 0
+        int pos=1; // Creating Position to 1
         while(temp) // While temp is not nullptr
         {
             if(temp->data==data) // If data is found
                 return pos; // Returning Position of Node
-            pos++;
+            pos++; // Updating pos to pos+1;
             temp=temp->next; // Updating temp to next Node
         }
-        return -1; // data not found so returning -1
+        return 0; // data not found so returning 0
     }
 };
