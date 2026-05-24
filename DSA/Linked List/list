@@ -146,4 +146,18 @@ public:
         }
         return 0; // data not found so returning 0
     }
+    T front()const
+    {
+        if(!head) throw std::runtime_error("List is empty");
+        return head->data;
+    }
+    T back()const
+    {
+        if(!head) throw std::runtime_error("List is empty");
+        return tail->data;
+    }
+    bool empty()const
+    {
+        return !head;
+    }
 };
