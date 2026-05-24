@@ -74,9 +74,8 @@ public:
         while(temp->next!=tail) // While temp!=2nd Back Node
             temp=temp->next; // Updating temp to next Node
         tail=temp; // Setting tail to 2nd Back Node
-        temp=temp->next; // Updating temp to last Node
+        delete tail->next; // Deleting Back Node
         tail->next=nullptr; // Setting tail's next to nullptr
-        delete temp; // Deleting last Node
     }
     void insertNode(T data,int pos) // Insert Node at pos
     {
