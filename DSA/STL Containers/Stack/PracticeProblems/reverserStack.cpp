@@ -11,8 +11,8 @@ void reverseStack(stack<int> &s)
         stackValues.push_back(s.top());
         s.pop();
     }
-    for(int i=0;i<stackValues.size();i++)
-        s.push(stackValues[i]);
+    for(int i:stackValues)
+        s.push(i);
 }
 // Print Stack Function
 void print(stack<int> s)
