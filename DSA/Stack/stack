@@ -1,0 +1,11 @@
+#include<vector>
+class stack
+{
+private:
+    std::vector<int> v;
+public:
+    void push(int n){ v.push_back(n); }
+    void pop(){ v.pop_back(); }
+    int top(){ return v.back(); }
+    bool empty(){ return v.empty(); }
+};
