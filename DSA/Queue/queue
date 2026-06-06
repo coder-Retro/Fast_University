@@ -2,7 +2,7 @@
 class queue
 {
 private:
-    list<int> l;
+    std::list<int> l;
 public:
     void enqueue(int val)
     {
@@ -16,6 +16,10 @@ public:
     {
         if(l.empty()) throw std::runtime_error("Queue is empty");
         l.pop_front();
+    }
+    int size()
+    {
+        return l.size();
     }
     bool empty()
     {

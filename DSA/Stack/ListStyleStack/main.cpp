@@ -4,9 +4,11 @@ using namespace std;
 int main()
 {
     stack s;
-    s.push(1);
-    s.push(2);
-    s.push(3);
+    for(int i=1;i<=5;i++)
+    {
+        s.push(i);
+        cout<<i<<" is inserted\n";
+    }
     while(!s.empty())
     {
         cout<<s.top()<<" ";
