@@ -4,7 +4,7 @@ using namespace std;
 /*
 Queue is basically a DATA STRUCTURE that we use when we
 need to utilize a FirstInFirstOut(FIFO) approach in the
-code. Queue is like a pipe, elements enter from the rare
+code. Queue is like a pipe, elements enter from the rear
 and exit from the front, like the uni-directional flow
 of water in a pipeline.
 */
