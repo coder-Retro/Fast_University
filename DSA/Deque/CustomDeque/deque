@@ -34,7 +34,7 @@ public:
     void pop_back()
     {
         if(!head) throw std::runtime_error("Empty");
-        else if(head==tail) pop_front();
+        else if(head==tail){ tail=nullptr; pop_front(); }
         else
         {
             ListNode* temp=head;
