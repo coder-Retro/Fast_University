@@ -30,6 +30,7 @@ public:
     void dequeue()
     {
         if(!head) throw std::runtime_error("Empty");
+        else if(head==tail){ tail=nullptr; pop_front(); }
         else
         {
             ListNode* temp=head;
