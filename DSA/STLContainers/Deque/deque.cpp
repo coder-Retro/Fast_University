@@ -2,8 +2,9 @@
 #include<deque>
 using namespace std;
 /*
-Deque are basically dynamic arrays and hence random access is possible like
-vectors and arrays, like:
+Deque stands for double ended queue, these
+are basically dynamic arrays and hence random
+access is possible like vectors and arrays, like:
 deque<int> dq={1,2,3,4,5};
 cout<<dq[2]; // valid
 */
