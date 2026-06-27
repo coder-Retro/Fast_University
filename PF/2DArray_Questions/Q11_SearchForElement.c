@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main()
+int main()
 {
     int matR,matC; // declaring rows and columns of matrix
     printf("Enter rows : ");
@@ -25,4 +25,5 @@ void main()
             }
     if(found==0) // value doesnt exist
         printf("N/A"); // displaying Absence of target value
+    return 0;
 }
