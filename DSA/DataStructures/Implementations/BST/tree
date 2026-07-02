@@ -1,25 +1,23 @@
 #include<iostream>
 using namespace std;
-template<typename T>
+
 // Node Class
-class Node
-{
+template<typename T>
+class Node {
 public:
     T data;
     Node<T>* left;
     Node<T>* right;
     Node(T data): data(data), left(nullptr),right(nullptr) {}
 };
-template<typename T>
+
 // tree Class
-class tree
-{
+template<typename T>
+class tree {
     Node<T>* root;
 public:
     tree():root(nullptr){}
-    Node<T>* getRoot() {
-        return root;
-    }
+    Node<T>* getRoot()const { return root; }
     void insertNode(T data) {
         Node<T>* newNode=new Node<T>(data);
         if(!root) { root=newNode; return; }
