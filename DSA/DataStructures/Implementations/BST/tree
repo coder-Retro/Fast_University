@@ -26,46 +26,21 @@ public:
     }
     void insertNode(T data)
     {
-        Node<T>* newNode=new Node(data);
-        if(!newNode)
-            return;
-        if(!root)
-        {
-            root=newNode;
-            return;
-        }
+        Node<T>* newNode=new Node<T>(data);
+        if(!root) { root=newNode; return; }
         Node<T>* temp=root;
-        while(1)
-        {
-            if(temp->data>newNode->data)
-            {
-                if(temp->left!=nullptr)
-                    temp=temp->left;
-                else
-                {
-                    temp->left=newNode;
-                    return;
-                }
+        while(true) {
+            if(data<temp->data) {
+                if(temp->left) temp=temp->left;
+                else { temp->left=newNode; return; }
+            } else if(data>temp->data) {
+                if(temp->right) temp=temp->right;
+                else { temp->right=newNode; return; }
             }
-            else if(temp->data<newNode->data)
-            {
-                if(temp->right!=nullptr)
-                    temp=temp->right;
-                else
-                {
-                    temp->right=newNode;
-                    return;
-                }
-            }
-            else
-            {
-                delete newNode;
-                newNode=nullptr;
-                return;
-            }
+            else { delete newNode; return; }
         }
     }
-    void deleteNode(int data)
+    void deleteNode(T data)
     {
         
     }
