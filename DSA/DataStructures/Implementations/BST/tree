@@ -8,10 +8,7 @@ public:
     T data;
     Node<T>* left;
     Node<T>* right;
-    Node(T data):left(nullptr),right(nullptr)
-    {
-        this->data=data;
-    }
+    Node(T data): data(data), left(nullptr),right(nullptr) {}
 };
 template<typename T>
 // tree Class
@@ -20,12 +17,10 @@ class tree
     Node<T>* root;
 public:
     tree():root(nullptr){}
-    Node<T>* getRoot()
-    {
+    Node<T>* getRoot() {
         return root;
     }
-    void insertNode(T data)
-    {
+    void insertNode(T data) {
         Node<T>* newNode=new Node<T>(data);
         if(!root) { root=newNode; return; }
         Node<T>* temp=root;
@@ -40,26 +35,22 @@ public:
             else { delete newNode; return; }
         }
     }
-    void deleteNode(T data)
-    {
+    void deleteNode(T data) {
         
     }
-    void preOrder(Node<T>* root)
-    {
+    void preOrder(Node<T>* root) {
         if(root==nullptr) return;
         cout<<root->data<<" ";
         preOrder(root->left);
         preOrder(root->right);
     }
-    void inOrder(Node<T>* root)
-    {
+    void inOrder(Node<T>* root) {
         if(root==nullptr) return;
         inOrder(root->left);
         cout<<root->data<<" ";
         inOrder(root->right);
     }
-    void postOrder(Node<T>* root)
-    {
+    void postOrder(Node<T>* root) {
         if(root==nullptr) return;
         postOrder(root->left);
         postOrder(root->right);
