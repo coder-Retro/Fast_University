@@ -10,4 +10,4 @@ int main() {
     int n=10;
     cout<<decToBin(n);
     return 0;
-}gi
+}
